@@ -46,7 +46,7 @@ the client-assigned server ID and the server-assigned client ID.
 The sm transport uses a per-connection, mmapped ring buffer for headers and a
 separate payload buffer. The mmap ring has lower latency than UDS datagram
 sockets or a FIFO. The ring uses compare-and-swap to provide lock-free
-synchromization that can support multiple threads. By default, the sm transport
+synchronization that can support multiple threads. By default, the sm transport
 polls the connection ring buffers looking for new headers. The endpoint's FIFO
 is used for keepalive messages (to detect closed peers) and to wake a peer that
 has requested wakeup notifications. The 4-byte FIFO headers will include the
