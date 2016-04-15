@@ -62,7 +62,7 @@ Found 1 CCI devices:
 
 It is possible to run a simple pingpong to test the installation:
 
-	cd src/test
+	cd src/tests
 	make pingpong
 
 Launch the server side of the pingpong:
